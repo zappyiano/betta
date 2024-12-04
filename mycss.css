@@ -1,0 +1,45 @@
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#home
+{font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+}
+#form
+{font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+}
+#contact
+{font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+}
+#gallery {font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+}
+p{font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+}
+h2 {font-weight: bold; font-size: larger; font-family: "Lucida Console", "Courier New"
+ }
+body {
+    background-color: #ddf4ff
+
+    ;
+background-repeat:no-repeat;
+background-size: cover;
+}
+.slider {
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    }
+    
+    .slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.0090s ease-in-out;
+    }
+    
+    .slider img.active {
+    opacity: 1;
+    }

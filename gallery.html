@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mycss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(215, 11, 11, 0.3);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <marquee behavior="" direction="">
+          <h1>A Site Dedicated To My Fishes
+          </H1>
+        </marquee>
+      </center>
+      <br>
+      <br>
+      <hr size="10" style="color: #ffd7cd; background-color: #ffd7cd;">
+      <br>
+      <br>
+    <left><a href="index.html" target="_self" rel="noopener noreferrer" id="home">Home</a>
+    </left>
+    <br><br>
+    <left><a href="form.html" target="_self" rel="noopener noreferrer" id="form">Fish Forms</a>
+    </left>
+    <br><br>
+    <left><a href="Contactus.html" target="_self" rel="noopener noreferrer" id="contact">Contact Me</a>
+    </left>
+ 
+    <h1>Card Flip with Text</h1>
+    <h3>Hover over the image below:</h3>
+   
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front"> <img src="Image_241121_095547.jpeg" alt="Avatar" style="width:300px;height:300px;"> </div>
+            <div class="flip-card-back">
+                <h1>Hi! Neyla and Sadaf</h1>
+                <p>Monkeys use all four limbs—two arms and two legs—to walk and run. Their hands and feet are good for
+                    grasping tree branches. Monkeys have a coat of hair on most of their bodies.</p>
+                <p> Many types have bare areas of skin on the face and buttocks. Male mandrills and some other types
+                    have brightly colored skin in these bare areas.</p>
+            </div>
+        </div>
+        <h1>Card Flip with image</h1>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front"> <img src="IMG_3696.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back"> <img src="IMG_3696.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+            </div>
+        </div>
+        <br><br>
+    <table>
+        <tr>
+            <td><img src="Image_241121_095547.jpeg" height="300" width="300"></td>
+            <td> <img src="IMG_3696.jpeg" height="300" width="300" alt=""></td>
+            <td> <img src="IMG_3682.jpeg" height="300" width="300"></td>
+            <td> <img src="IMG_3698.jpeg" height="300" width="300"></td>
+        </tr>
+
+    </table> 
+
+    
+</body>
+
+</html>

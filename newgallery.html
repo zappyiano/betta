@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish and Fish</title>
+  <link rel="stylesheet" href="mycss.css">
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    
+/* Flip Card Container */
+.flip-card-container {
+  display: flex;
+  gap: 1px; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 310px;  /* Set a fixed width */
+  height: 310px; /* Set a fixed height */
+  perspective: 1000px;
+  margin: 5px; /* Optional for spacing between cards */
+}
+
+/* Inner flip card content */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Flip card hover effect */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back of the Flip Card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* For Image inside the flip card */
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the card without distortion */
+}
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <center>
+    <marquee behavior="" direction="">
+      <h1>A Site Dedicated To My Fishes
+      </H1>
+    </marquee>
+  </center>
+  <br>
+  <br>
+  <hr size="10" style="color: #ffd7cd; background-color: #ffd7cd;">
+  <br>
+  <br>
+  <left><a href="index.html" target="_self" rel="noopener noreferrer" id="home">Home</a>
+  </left>
+  <br><br>
+  <left><a href="form.html" target="_self" rel="noopener noreferrer" id="form">Fish Forms</a>
+  </left>
+  <br><br>
+  <left><a href="newgallery.html" target="_self" rel="noopener noreferrer" id="gallery">Gallery </a></left>
+  <br><br>
+  <left><a href="video.html" target="_self" rel="noopener noreferrer" id="gallery">Videos</a></left>
+  <br><br>
+  <left><a href="Contactus.html" target="_self" rel="noopener noreferrer" id="contact">Contact Me</a>
+  </left>
+
+
+
+  <center>
+    <h2>Introduction</h2>
+  </center>
+  <center>
+    <p>Hello, My name is Ian and this is my first website. It's a site dedicated to the fishes I'm raising at home.
+    </p>
+  </center>
+  <br>
+
+  <center>
+    <table width="75%">
+      <tr>
+        <td>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="IMG_3682.jpeg">
+                <img src="IMG_3682.jpeg" alt="betta1" width="300" height="300">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="IMG_3682.jpeg">
+                <img src="IMG_3682.jpeg" alt="betta1" width="300" height="300">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="IMG_3682.jpeg">
+                <img src="IMG_3682.jpeg" alt="betta1" width="300" height="300">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="IMG_3682.jpeg">
+                <img src="IMG_3682.jpeg" alt="betta1" width="300" height="300">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+            <br><br>
+          </td>
+        </tr>
+      </table>
+
+      <table width="75%">
+        <tr><td>
+            <div class="flip-card-container">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="Image_241121_095547.jpeg" alt="Avatar" width=300 height=300>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Betta</h1>
+                    <p>Bettas are wonderful fishes with exciting personalities.</p>
+                  </div>
+                </div>
+              </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Image_241121_095547.jpeg" alt="Avatar" width=300 height=300>
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Betta</h1>
+                      <p>Bettas are wonderful fishes with exciting personalities.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="IMG_3696.jpeg" alt="Avatar" width=300 height=300>
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="IMG_3696.jpeg" alt="Avatar" width=300 height=300>
+                      <br><br>
+                    </div>
+                  </div>
+                </div>
+            
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="IMG_3696.jpeg" alt="Avatar" width=300 height=300>
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="IMG_3696.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                    <br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td></tr>
+          </table>
+            
+
+      
+  </center>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <br>
+  <br>
+  <br>
+  <right>&copy;opyright2024</rights>
+
+</body>
+
+</html>
